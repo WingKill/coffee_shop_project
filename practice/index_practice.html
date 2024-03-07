@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cafe page</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			text-align: center;
+		}
+
+		#container{
+			width: 1002px;
+			margin: 5% auto;
+			border: 1px solid #8f8e8e;
+		}
+
+		.header{
+			width: 1000px;
+		}
+
+		.header .menu-bar{
+			background-color: brown;
+			height: 50px;
+		}
+
+		.header .menu-bar li{
+			line-height: 50px;
+			list-style: none;
+			display: inline-block;
+			margin: 0 20px 0 20px;
+		}
+
+		.header .menu-bar li a,.header .menu-bar li a:visited{
+			text-decoration: none;
+			color: white;
+		}
+
+		.header .menu-bar li a:hover{
+			color: orange;
+		}
+
+		.header-image{
+			width: 1000px;
+			background-image: url(../images/header.jpg);
+			background-size: cover;
+			height: 550px;		
+		}
+
+		.content{
+			width: 1000px;
+		}
+
+		.content .post{
+			width: 1000px;
+			border: 1px dotted #cccccc;
+			padding: 30px;
+			height: 450px;
+			text-align: left;
+			position: relative;
+		}
+
+		.post:nth-child(2){
+			background-color: antiquewhite;
+		}
+
+		.post h1{
+			height: 50px;
+		}
+
+		.post img{
+			width: 400px;
+			height: auto;
+			padding: 30px;
+			position: absolute;
+			left: 50px;
+		}
+
+		.post .text{
+			width: 440px;
+			height: 200px;
+			padding: 30px;
+			position: absolute;
+			top: 100px;
+			left: 500px;
+			font-weight: bold;
+		}
+
+		.post:nth-child(3) img{
+			left: 500px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+
+		.post:nth-child(3) .text{
+			top:80px;
+			left:50px;
+			line-height: 2em;
+		}
+
+		.text p{
+			font-size: 1.2em;
+		}
+
+		.text .small-text{
+			font-size: 0.9em;
+			font-style: italic;
+		}
+
+		.footer{
+			width: 1000px;
+			height: 100px;
+			line-height: 100px;
+			font-size: 2em;
+			background-color: brown;
+			color:aqua;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="header">		
+			<ul class="menu-bar">
+				<li><a href="">카페 소개</a></li>
+				<li><a href="">오시는 길</a></li>
+				<li><a href="">이 달의 추천</a></li>
+			</ul>
+			<div class="header-image"></div>
+		</div>
+		<div class="content">
+			<div class="post">
+				<h1>카페 소개</h1>
+				<img src="../images/coffee.jpg" alt="">
+				<div class="text">
+					<p>영업 시간 : 오전 9시 ~ 밤 10시
+						<br><br>
+						휴무 : 매주 수요일</p>
+						<br>
+					<p class="small-text">(수요일이 공휴일일 경우 수요일 영업, 다음날 휴무)</p>
+				</div>
+			</div>
+			<div class="post">
+				<h1>오시는 길</h1>
+				<img src="../images/map.jpg" alt="사계 포구에서 서쪽 방향으로 000미터 진행">
+				<div class="text">
+					<p>	서귀포시 안덕면 사계리 oooo-ooo<br><br>						
+						제주 올레 10코스 산방산 근처</p>
+				</div>
+			</div>
+			<div class="post">
+				<h1>이 달의 추천</h1>
+				<img src="../images/ice.jpg" alt="">
+				<div class="text">
+					<h2>핸드드립 아이스커피</h2>
+					<br>
+					<ol>
+						<li>1인분 기준으로 서버에 각얼름 5조각(한조각의 20cc) 넣고 추출을 시작한다.</li>
+						<li>평상시 보다 원두의 양은 2배 정도(20g)와 추출액은 얼음 포함해서 200cc까지 내린다.</li>
+						<li>아이스 잔에 얼음 6~7개 섞어서 시원하게 마신다.</li>
+					</ol>
+				</div>				
+			</div>
+		</div>
+		<div class="footer">My times with Coffee</div>
+	</div>
+</body>
+</html>
